@@ -77,7 +77,6 @@ body {
 }
 
 .photo-active .photo-description {
-  margin-top: 40px;
   font-size: 20px;
   position: absolute;
   top: 50px;
@@ -148,4 +147,39 @@ body {
 textarea {
   height: auto;
   min-height: 150px;
+}
+
+@media all and (max-width: 920px) {
+
+    .header-container {
+        flex-direction: column;
+      }
+    
+    .logo {
+        text-align: center;
+        font-size: 40px;
+        padding: 10px;
+      }
+
+    .header-title h1 {
+        line-height: 1em;
+        text-align: center;
+        flex: 1;
+        font-size: 35px;
+    }
+
+    .photo-active .photo-description {
+        font-size: 20px;
+        top: 150px;
+      }
+
+      .photo-active .photo-price {
+        font-size: 60px;
+      }
+
+      .title-form {
+        font-size: 30px;
+        line-height: 2em;
+      }
+
 }
