@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>J-tour</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header-container">
+      <div class="logo">Julia-tour</div>
+      <div class="header-title">
+        <h1 class="title">Открывай мир вместе с нами!</h1>
+      </div>
+    </div>
+    <div class="main-container">
+      <div class="photos">
+        <div class="photo one">
+          <h3 class="photo-text photo-title">Озеро Гарда, Италия</h3>
+          <p class="photo-text photo-description">
+            Экскурсия на лодке, 2 часа.
+          </p>
+          <p class="photo-text photo-price">250$</p>
+        </div>
+
+        <div class="photo two">
+          <h3 class="photo-text photo-title">Замок Микулов, Чехия</h3>
+          <p class="photo-text photo-description">
+            Осмотр замка с гидом, 1 час.
+          </p>
+          <p class="photo-text photo-price">80$</p>
+        </div>
+
+        <div class="photo three">
+          <h3 class="photo-text photo-title">Отдых у моря, Италия</h3>
+          <p class="photo-text photo-description">
+            5 дней в кемпинге, город Равенна.
+          </p>
+          <p class="photo-text photo-price">500$</p>
+        </div>
+
+        <div class="photo four">
+          <h3 class="photo-text photo-title">Сан-Марино</h3>
+          <p class="photo-text photo-description">
+            Экскурсия в старый город на горе, 3 часа.
+          </p>
+          <p class="photo-text photo-price">180$</p>
+        </div>
+
+        <div class="photo five">
+          <h3 class="photo-text photo-title">Венеция, Италия</h3>
+          <p class="photo-text photo-description">
+            Катание на гондолах, 1 час.
+          </p>
+          <p class="photo-text photo-price">100$</p>
+        </div>
+
+        <div class="photo six">
+          <h3 class="photo-text photo-title">Верона, Италия</h3>
+          <p class="photo-text photo-description">
+            Экскурсия "Ромео и Джульетта", 2 часа
+          </p>
+          <p class="photo-text photo-price">150$</p>
+        </div>
+      </div>
+      <div class="order"></div>
+    </div>
+
+    <div class="client-form">
+      <h2 class="title title-form">Спросите нас обо всем!</h2>
+      <form action="https://formspree.io/f/xpzbeynw" method="POST">
+        <input type="hidden" name="_language" value="ru" />
+
+        <label>
+          <h5 class="title title-form">Ваш email:</h5>
+          <input
+            type="email"
+            class="text-input"
+            name="email"
+            placeholder="Ваш email..."
+            required=""
+          />
+        </label>
+
+        <label>
+          <h5 class="title title-form">Ваше сообщение:</h5>
+          <textarea
+            name="message"
+            class="text-input"
+            placeholder="Ваше сообщение..."
+            required=""
+          ></textarea>
+        </label>
+
+        <div class="btn">
+          <button type="submit" class="title-btn">Отправить</button>
+        </div>
+        >
+      </form>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>

@@ -1,0 +1,151 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "marckscript";
+  src: url("fonts/marckscript.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+body {
+  background-color: rgb(11, 2, 47);
+}
+
+.header-container {
+  display: flex;
+}
+
+.logo {
+  color: aliceblue;
+  font-family: "marckscript";
+  font-size: 70px;
+  flex: 1;
+  padding: 20px;
+  text-decoration: underline;
+}
+
+.header-title {
+  flex: 2;
+  padding: 20px;
+}
+
+.title {
+  color: white;
+  font-family: "marckscript";
+  text-align: end;
+  font-size: 40px;
+  line-height: 2.5em;
+}
+
+.photos {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.photo {
+  color: white;
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  flex: 1;
+  margin-left: 15px;
+  font-family: "marckscript";
+  padding-top: 30px;
+  position: relative;
+}
+
+.photo-active {
+  flex: 4;
+}
+
+.photo-text {
+  width: 100%;
+  background-color: rgba(11, 2, 47, 0.6);
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 0;
+}
+
+.photo-active .photo-title {
+  font-size: 30px;
+  transition: all 0.5s ease-in;
+}
+
+.photo-active .photo-description {
+  margin-top: 40px;
+  font-size: 20px;
+  position: absolute;
+  top: 50px;
+  transition: all 0.5s ease-in;
+}
+
+.photo-active .photo-price {
+  position: absolute;
+  margin-top: 140px;
+  bottom: 50px;
+  line-height: 0.5;
+  font-size: 70px;
+  transition: all 0.5s ease-in;
+}
+
+.one {
+  background-image: url("img/garda_it.jpg");
+}
+
+.two {
+  background-image: url("img/mikulov_cz.jpg");
+}
+
+.three {
+  background-image: url("img/ravenna_it.jpg");
+}
+
+.four {
+  background-image: url("img/san_marino.jpg");
+}
+
+.five {
+  background-image: url("img/venezia_it.jpg");
+}
+
+.six {
+  background-image: url("img/verona_it.jpg");
+}
+
+.client-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.title-form {
+  text-align: center;
+}
+
+.text-input {
+  border: none;
+  padding: 10px;
+  width: 100%;
+  font-size: 15px;
+}
+
+.title-btn {
+  color: rgb(11, 2, 47);
+  width: 100%;
+  margin-top: 10px;
+  text-align: center;
+  line-height: 1.2em;
+  font-size: 25px;
+  font-family: "marckscript";
+}
+
+textarea {
+  height: auto;
+  min-height: 150px;
+}
